@@ -10,10 +10,11 @@
         li {
             padding: 0rem 1.2rem 0rem 1.2rem;
             a {
-                font-weight: 600;
-                font-size: 1.125rem;
-                color: red;
-                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: $white;
+            }
+            .active {
                 text-decoration: underline;
                 text-decoration-thickness: 1px;
                 text-underline-offset: 0.4rem;
