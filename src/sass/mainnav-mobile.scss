@@ -19,7 +19,7 @@
                 max-width: 20rem;
                 top: 0;
                 right: 0;
-                background-color: red;
+                background-color: $grey;
                 box-shadow: -5px 0 10px 0 rgb(0 0 0 /0.1);
                 li {
                     font-size: 1.37rem;
@@ -30,7 +30,6 @@
                         text-transform: unset;
                         font-weight: 300;
                         text-decoration: none;
-                        color: red;
                     }
                 }
             }

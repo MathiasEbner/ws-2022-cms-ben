@@ -19,13 +19,13 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 200px;
+            gap: 150px;
             .slogan {
                 max-width: 950px;
                 font-family: "Vollkorn";
                 text-align: center;
                 font-weight: 800;
-                font-size: 6rem;
+                font-size: 5.5rem;
                 line-height: 8rem;
                 color: $white;
             }

@@ -11,10 +11,10 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         article {
             width: 33%;
-            max-width: 450px;
+            max-width: 380px;
 
             img {
                 width: 100%;
@@ -23,12 +23,20 @@
             }
             .newsTextContainer {
                 background-color: $grey;
-                padding: 1.8rem;
+                max-height: 250px;
+                padding: 1.7rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 0.7rem;
                 margin-top: -5px;
+                .newsText {
+                    display: -webkit-box;
+
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
                 .newsInfo {
                     display: flex;
                     justify-content: space-between;
