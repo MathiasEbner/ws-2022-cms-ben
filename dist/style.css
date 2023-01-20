@@ -268,7 +268,19 @@ a {
   color: #282828;
 }
 
-@media (min-width: 0rem) and (max-width: 37.4375rem) {
+@media (min-width: 0rem) and (max-width: 42.5rem) {
+  .super-headline {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    padding: 0.65rem 0rem 0.65rem 1.25rem;
+  }
+}
+@media (min-width: 0rem) and (max-width: 42.5rem) {
   #hamburger {
     width: 24px;
     height: 13px;
@@ -283,7 +295,7 @@ a {
   #hamburger [class^=line-] {
     position: absolute;
     background-color: #ffffff;
-    height: 1px;
+    height: 2px;
     transition: transform 0.5s ease;
     right: 0;
   }
@@ -416,6 +428,36 @@ header .headerMainContainer .headerText #headerButton {
   border-width: 2px;
 }
 
+@media (min-width: 0rem) and (max-width: 51.9375rem) {
+  header .headerMainContainer .headerText {
+    gap: 50px;
+  }
+}
+@media (min-width: 0rem) and (max-width: 42.5rem) {
+  header {
+    height: 80vh;
+  }
+  header .topNavContainer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  header .headerMainContainer .headerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  header .headerMainContainer .headerText .slogan {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 4rem;
+    text-align: center;
+  }
+  header .headerMainContainer .headerText #headerButton {
+    font-size: 1.3rem;
+  }
+}
 #products {
   width: 100%;
   background-color: #282828;
@@ -451,6 +493,36 @@ header .headerMainContainer .headerText #headerButton {
   flex-direction: row-reverse;
 }
 
+@media (min-width: 0rem) and (max-width: 51.9375rem) {
+  #products .productsContainer .product:nth-child(even) {
+    flex-direction: column;
+  }
+  #products .productsContainer .product:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+@media (min-width: 0rem) and (max-width: 42.5rem) {
+  #products .productsContainer .product {
+    padding: 7rem;
+  }
+  #products .productsContainer .product img {
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  #products .productsContainer .product .productTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  #products .productsContainer .productsContainer .product:nth-child(even) {
+    flex-direction: column;
+  }
+  #products .productsContainer .productsContainer .product:nth-child(odd) {
+    flex-direction: column;
+  }
+}
 #news {
   width: 100%;
   background: #da923f url("../../images/Schnecke.svg") center right no-repeat;

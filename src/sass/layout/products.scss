@@ -32,3 +32,45 @@
         }
     }
 }
+
+@include breakpoint(0, $tablet) {
+    #products {
+        .productsContainer {
+            .product:nth-child(even) {
+                flex-direction: column;
+            }
+            .product:nth-child(odd) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #products {
+        .productsContainer {
+            .product {
+                padding: 7rem;
+                img {
+                    object-fit: cover;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                }
+                .productTextContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.8rem;
+                    padding: 1rem;
+                }
+            }
+            .productsContainer {
+                .product:nth-child(even) {
+                    flex-direction: column;
+                }
+                .product:nth-child(odd) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
